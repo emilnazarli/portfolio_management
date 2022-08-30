@@ -1,192 +1,58 @@
-# Portfolio Management in Stock Market
-## _The Last Markdown Editor, Ever_
+## Report
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+This project is about how you can create your portfolio in Python which is very important for investors .Inputs , that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks : General Electronics,JPMorgan Chase &amp; Co.,Microsoft Corporation and Citigroup Inc.
+The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
+to companies were equal weights ,each of them 25%. Moreover my idea was, to show the stock price
+change visually by using python plotting function .Project informs user about portfolio profitability and
+riskiness over any time period using writing start and end data. For financial approach find my risk of
+portfolio I found to daily mean and then yearly mean. Using data which I imported I found portfolio
+simple returns, co-variance, daily returns, variance(risk), and correlation among stocks . standard
+deviation and volatility of population, volatility actually shows our risk. This project strictly will helpful
+investments.
+Now I am going to explain what I have done.
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+1. First, we need to import our library used within this project. Datetime-to get a date,
+pandas_datareader-to get stock prices, pandas-for analyses, NumPy -for high-level mathematical
+functions, matplotlib.pyplot-graphing, from pandas.plotting import register_matplotlib_converters,
+register_matplotlib_converters()-for register –for errors, fivethirtyeight.com - site I use graphs styles as
+the same.
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+2. Get stock symbols and my stocks for portfolio: GE-General Electronics, JPM-JPMorgan Chase &amp; Co.,
+MSFT-Microsoft Corporation, C-Citigroup Inc. and print them
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+3. To get a start date and end date for the portfolio. I begin from the 1st of January to see full-year data.
+The end date is the current date as a form of YYYY-MM-DD.
 
-## Features
+4. To calculate the number of stocks in the portfolio and print it.
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+5. To create a function for import stock adjusted prices from 01.01.2015 until now as data and print it.
+6. To create a function to see visually price change as a graph.
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+7. To find simple daily returns by using the percentage change function for the data.
+8. To find a correlation (Correlation is a mathematical term used to find a change in one variable leads to
+change in another variable and changes between -1 and 1. 1 is positive corr , if one variable increases
+another variable increase. Negative corr (-1) - one increases - another decrease.) and print it
+9. Find the covariance matrix for daily simple returns which means how stocks move together and print
+it.
+10. In this step, I calculated variance or other words risk. (Variance is used in finance to find risk. It used
+to find spread between prices. If Variance is high it means high risk, higher return, and higher volatility
+and if a variance is low then low risk, lower return, and lower volatility.)
+11. To find a standard deviation or square-root of the variance is called volatility. In our case, less risky
+asset in our data is Microsoft (0.017317) and higher risk asset is General Electronics(0.021942) (as
+explained 10.)
+12. To create a graph for daily simple returns and volatility.
+13. And this step I found expected returns by finding the mean of daily simple returns. As we see again
+higher performance for expected returns showed by Microsoft (0.001213) and the lowest by General
+Electronics (-0.000630).
+14. By using expected returns according to weights of companies( each of the 25%) I found daily
+expected portfolio return (0.00030603649528441643)
+15. To find annual return we need to multiply daily returns to annual trading days(253) which is in our
+portfolio annual return is 0.07742723330695736. It means our investment gives about 7.74% annual
+return.
+16. Create a function to find cumulative returns by numpy.cumprod() function and print it
+17.To create a graph for cumulative daily simple returns
+Result
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
-
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd dillinger
-npm i
-node app
-```
-
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
-```
-
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-## Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
-```
-
-Second Tab:
-
-```sh
-gulp watch
-```
-
-(optional) Third:
-
-```sh
-karma test
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
-```
-
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
-
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
-```
-
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-## License
-
-MIT
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our
+portfolio .if we invested Microsoft on 01.01.2015 and sold it in 2020 we could make 4 times more in
+our investment. On the other hand, the lowest performance made by General Electronics (decrease).
