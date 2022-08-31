@@ -1,10 +1,10 @@
 ## Report
 
-This project is about how you can create your portfolio in Python which is very important for investors .Inputs , that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks : 
-[General Electronics]
-[JPMorgan Chase &amp; Co.]
-[Microsoft Corporation]
-[Citigroup Inc.]
+This project is about how you can create your portfolio in Python which is very important for investors .Inputs , that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks: 
+-[General Electronics]
+-[JPMorgan Chase &amp; Co.]
+-[Microsoft Corporation]
+-[Citigroup Inc.]
 The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
 to companies were equal weights ,each of them 25%. Moreover my idea was, to show the stock price
 change visually by using python plotting function .Project informs user about portfolio profitability and
