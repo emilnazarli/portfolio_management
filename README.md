@@ -9,9 +9,9 @@
  The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
 to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
 change visually by using python plotting function. Project informs user about portfolio profitability and
-riskiness over any time period using writing start and end data. For financial approach find my risk of
-portfolio I found to daily mean and then yearly mean. Using data which I imported I found portfolio
-simple returns, co-variance, daily returns, variance(risk), and correlation among stocks . standard
+riskiness over any time period by writing start and end data. For financial approach, to find my risk of
+portfolio I found to daily mean and then annual mean. Using data which I imported, I found portfolio
+simple returns, co-variance, daily returns, variance(risk), and correlation among stocks. Standard
 deviation and volatility of population, volatility actually shows our risk. This project strictly will helpful
 investments.
 Now I am going to explain what I have done.
@@ -25,8 +25,11 @@ Now I am going to explain what I have done.
  [register_matplotlib_converters()-for register –for errors, 
  [fivethirtyeight.com] - site I use graphs styles as the same.
 
-2. Get stock symbols and my stocks for portfolio: [GE]-General Electronics, [JPM]-JPMorgan Chase &amp; Co.,
-[MSFT]-Microsoft Corporation, [C]-Citigroup Inc. and print them
+2. Get stock symbols and my stocks for portfolio: 
+- [GE]-General Electronics, 
+- [JPM]-JPMorgan Chase &amp; Co.,
+- [MSFT]-Microsoft Corporation, 
+- [C]-Citigroup Inc. and print them
 
 3. To get a start date and end date for the portfolio. I begin from the 1st of January to see full-year data.
 The end date is the current date as a form of YYYY-MM-DD.
@@ -37,30 +40,17 @@ The end date is the current date as a form of YYYY-MM-DD.
 6. To create a function to see visually price change as a graph.
 
 7. To find simple daily returns by using the percentage change function for the data.
-8. To find a correlation (Correlation is a mathematical term used to find a change in one variable leads to
-change in another variable and changes between -1 and 1. 1 is positive corr , if one variable increases
-another variable increase. Negative corr (-1) - one increases - another decrease.) and print it
-9. Find the covariance matrix for daily simple returns which means how stocks move together and print
-it.
-10. In this step, I calculated variance or other words risk. (Variance is used in finance to find risk. It used
-to find spread between prices. If Variance is high it means high risk, higher return, and higher volatility
-and if a variance is low then low risk, lower return, and lower volatility.)
-11. To find a standard deviation or square-root of the variance is called volatility. In our case, less risky
-asset in our data is Microsoft (0.017317) and higher risk asset is General Electronics(0.021942) (as
-explained 10.)
+8. To find a correlation (Correlation is a mathematical term used to find a change in one variable leads to change in another variable and changes between -1 and 1. 1 is positive corr , if one variable increases another variable increase. Negative corr (-1) - one increases - another decrease.) and print it
+9. Find the covariance matrix for daily simple returns which means how stocks move together and print it.
+10. In this step, I calculated variance or other words risk. (Variance is used in finance to find risk. It used to find spread between prices. If Variance is high it means high risk, higher return, and higher volatility and if a variance is low then low risk, lower return, and lower volatility.)
+11. To find a standard deviation or square-root of the variance is called volatility. In our case, less risky asset in our data is Microsoft (0.017317) and higher risk asset is General Electronics(0.021942) (as explained 10.)
 12. To create a graph for daily simple returns and volatility.
-13. And this step I found expected returns by finding the mean of daily simple returns. As we see again
-higher performance for expected returns showed by Microsoft (0.001213) and the lowest by General
-Electronics (-0.000630).
-14. By using expected returns according to weights of companies( each of the 25%) I found daily
-expected portfolio return (0.00030603649528441643)
-15. To find annual return we need to multiply daily returns to annual trading days(253) which is in our
-portfolio annual return is 0.07742723330695736. It means our investment gives about 7.74% annual
-return.
+13. And this step I found expected returns by finding the mean of daily simple returns. As we see again higher performance for expected returns showed by Microsoft (0.001213) and the lowest by General Electronics (-0.000630).
+14. By using expected returns according to weights of companies( each of the 25%) I found daily expected portfolio return (0.00030603649528441643)
+15. To find annual return we need to multiply daily returns to annual trading days(253) which is in our portfolio annual return is 0.07742723330695736. It means our investment gives about 7.74% annual return.
 16. Create a function to find cumulative returns by numpy.cumprod() function and print it
-17.To create a graph for cumulative daily simple returns
-Result
+17.To create a graph for cumulative daily simple returns Result
 
 As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our
-portfolio .if we invested Microsoft on 01.01.2015 and sold it in 2020 we could make 4 times more in
-our investment. On the other hand, the lowest performance made by General Electronics (decrease).
+portfolio. If we invested Microsoft on 01.01.2015 and sold it in 2020 we could make gain in
+our investment. On the other hand, the lowest performance made by General Electronics.
