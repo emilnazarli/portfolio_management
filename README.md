@@ -17,13 +17,13 @@ investments.
 Now I am going to explain what I have done.
 
 1. First, we need to import our library used within this project:
-[Datetime]-to get a date
-[pandas_datareader]-to get stock prices
-[pandas]-for analyses
-[NumPy]-for high-level mathematical functions, 
-[matplotlib.pyplot]-graphing from pandas.plotting import register_matplotlib_converters,
-[register_matplotlib_converters()-for register –for errors, 
-[fivethirtyeight.com] - site I use graphs styles as the same.
+ [Datetime]-to get a date
+ [pandas_datareader]-to get stock prices
+ [pandas]-for analyses
+ [NumPy]-for high-level mathematical functions, 
+ [matplotlib.pyplot]-graphing from pandas.plotting import register_matplotlib_converters,
+ [register_matplotlib_converters()-for register –for errors, 
+ [fivethirtyeight.com] - site I use graphs styles as the same.
 
 2. Get stock symbols and my stocks for portfolio: [GE]-General Electronics, [JPM]-JPMorgan Chase &amp; Co.,
 [MSFT]-Microsoft Corporation, [C]-Citigroup Inc. and print them
