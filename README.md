@@ -24,8 +24,8 @@ Now I am going to explain what I have done.
 [register_matplotlib_converters()-for register –for errors, 
 [fivethirtyeight.com] - site I use graphs styles as the same.
 
-2. Get stock symbols and my stocks for portfolio: GE-General Electronics, JPM-JPMorgan Chase &amp; Co.,
-MSFT-Microsoft Corporation, C-Citigroup Inc. and print them
+2. Get stock symbols and my stocks for portfolio: [GE]-General Electronics, [JPM]-JPMorgan Chase &amp; Co.,
+[MSFT]-Microsoft Corporation, [C]-Citigroup Inc. and print them
 
 3. To get a start date and end date for the portfolio. I begin from the 1st of January to see full-year data.
 The end date is the current date as a form of YYYY-MM-DD.
