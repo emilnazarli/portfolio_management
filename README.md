@@ -1,10 +1,11 @@
 ## Report
 
-# This project is about how you can create your portfolio on Python based on stock returns of over companies. Inputs that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks: 
-- [General Electronics]
-- [JPMorgan Chase &amp; Co.]
-- [Microsoft Corporation]
-- [Citigroup Inc.]
+> This project is about how you can create your portfolio on Python based on stock returns of over companies. Inputs that I used from yahoofinance to get companies 
+> real stock prices. My portflio consisted of 4 real company stocks: 
+- General Electronics
+- JPMorgan Chase &amp; Co.
+- Microsoft Corporation
+- Citigroup Inc.
  
   The tool shows returns and risks by finding variance of returns. Returns from portfolio according
 to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
@@ -17,19 +18,19 @@ investments.
 Now I am going to explain what I have done.
 
 1. First, we need to import our library used within this project:
-- [Datetime]-to get a date
-- [pandas_datareader]-to get stock prices
-- [pandas]-for analyses
-- [NumPy]-for high-level mathematical functions, 
-- [matplotlib.pyplot]-graphing from pandas.plotting import register_matplotlib_converters,
-- [register_matplotlib_converters()-for register –for errors, 
-- [fivethirtyeight.com] - site I use graphs styles as the same.
+- Datetime-to get a date
+- pandas_datareader-to get stock prices
+- pandas-for analyses
+- NumPy-for high-level mathematical functions, 
+- matplotlib.pyplot-graphing from pandas.plotting import register_matplotlib_converters,
+- register_matplotlib_converters()-for register –for errors, 
+- fivethirtyeight.com - site I use graphs styles as the same.
 
 2. Get stock symbols and my stocks for portfolio: 
-- [GE]-General Electronics, 
-- [JPM]-JPMorgan Chase &amp; Co.,
-- [MSFT]-Microsoft Corporation, 
-- [C]-Citigroup Inc. and print them
+- GE-General Electronics, 
+- JPM-JPMorgan Chase &amp; Co.,
+- MSFT-Microsoft Corporation, 
+- C-Citigroup Inc. and print them
 
 3. To get a start date and end date for the portfolio. I begin from the 1st of January to see full-year data.
 The end date is the current date as a form of YYYY-MM-DD.
