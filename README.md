@@ -51,6 +51,4 @@ The end date is the current date as a form of YYYY-MM-DD.
 16. Create a function to find cumulative returns by numpy.cumprod() function and print it
 17.To create a graph for cumulative daily simple returns Result
 
-As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our
-portfolio. If we invested Microsoft on 01.01.2015 and sold it in 2020 we could make gain in
-our investment. On the other hand, the lowest performance made by General Electronics.
+## As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our portfolio. If we invested Microsoft on 01.01.2015 and sold it in 2020 we could make gain in our investment. On the other hand, the lowest performance made by General Electronics.
