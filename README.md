@@ -7,14 +7,15 @@
 - Microsoft Corporation
 - Citigroup Inc.
  
-  The tool shows returns and risks by finding variance of returns. Returns from portfolio according
-to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
-change visually by using python plotting function. Project informs user about portfolio profitability and
-riskiness over any time period by writing start and end data. For financial approach, to find risk of
-portfolio I found daily mean and then annual mean. Using data which I imported, I found portfolio
-simple returns, co-variance, daily returns, variance(risk), and correlation among stocks. Standard
-deviation and volatility of population, volatility actually shows our risk. This project strictly will helpful
-investments.
+> The tool shows returns and risks by finding variance of returns. Returns from portfolio according
+> to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
+> change visually by using python plotting function. Project informs user about portfolio profitability and
+> riskiness over any time period by writing start and end data. For financial approach, to find risk of
+> portfolio I found daily mean and then annual mean. Using data which I imported, I found portfolio
+> simple returns, co-variance, daily returns, variance(risk), and correlation among stocks. Standard
+> deviation and volatility of population, volatility actually shows our risk. This project strictly will helpful
+> investments.
+
 Now I am going to explain what I have done.
 
 1. First, we need to import our library used within this project:
@@ -52,4 +53,4 @@ The end date is the current date as a form of YYYY-MM-DD.
 16. Create a function to find cumulative returns by numpy.cumprod() function and print it
 17.To create a graph for cumulative daily simple returns Result
 
-## As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our portfolio. If we invested Microsoft on 01.01.2015 and sold it in 2020 we could make gain in our investment. On the other hand, the lowest performance made by General Electronics.
+> As we see from the cumulative returns bar chart&#39;s highest performance made by Microsoft over our portfolio. If we invested Microsoft on 01.01.2015 and sold it in > 2020 we could make gain in our investment. On the other hand, the lowest performance made by General Electronics.
