@@ -1,6 +1,6 @@
 ## Report
 
-This project is about how you can create your portfolio in Python which is very important for investors .Inputs , that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks: 
+#This project is about how you can create your portfolio in Python which is very important for investors .Inputs , that I used from yahoofinance to get companies real stock prices. My portflio consisted of 4 real company stocks: 
 -[General Electronics]
 -[JPMorgan Chase &amp; Co.]
 -[Microsoft Corporation]
