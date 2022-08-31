@@ -6,7 +6,7 @@
 - [Microsoft Corporation]
 - [Citigroup Inc.]
  
- The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
+  The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
 to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
 change visually by using python plotting function. Project informs user about portfolio profitability and
 riskiness over any time period by writing start and end data. For financial approach, to find my risk of
