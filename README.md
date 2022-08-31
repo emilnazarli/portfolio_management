@@ -6,8 +6,8 @@ This project is about how you can create your portfolio in Python which is very 
 -[Microsoft Corporation]
 -[Citigroup Inc.]
 The tool shows my returns and risks by finding variance of returns. My returns from portfolio according
-to companies were equal weights ,each of them 25%. Moreover my idea was, to show the stock price
-change visually by using python plotting function .Project informs user about portfolio profitability and
+to companies were equal weights, each of them 25%. Moreover my idea was, to show the stock price
+change visually by using python plotting function. Project informs user about portfolio profitability and
 riskiness over any time period using writing start and end data. For financial approach find my risk of
 portfolio I found to daily mean and then yearly mean. Using data which I imported I found portfolio
 simple returns, co-variance, daily returns, variance(risk), and correlation among stocks . standard
@@ -15,11 +15,14 @@ deviation and volatility of population, volatility actually shows our risk. This
 investments.
 Now I am going to explain what I have done.
 
-1. First, we need to import our library used within this project. Datetime-to get a date,
-pandas_datareader-to get stock prices, pandas-for analyses, NumPy -for high-level mathematical
-functions, matplotlib.pyplot-graphing, from pandas.plotting import register_matplotlib_converters,
-register_matplotlib_converters()-for register –for errors, fivethirtyeight.com - site I use graphs styles as
-the same.
+1. First, we need to import our library used within this project:
+[Datetime]-to get a date
+[pandas_datareader]-to get stock prices
+[pandas]-for analyses
+[NumPy]-for high-level mathematical functions, 
+[matplotlib.pyplot]-graphing from pandas.plotting import register_matplotlib_converters,
+[register_matplotlib_converters()-for register –for errors, 
+[fivethirtyeight.com] - site I use graphs styles as the same.
 
 2. Get stock symbols and my stocks for portfolio: GE-General Electronics, JPM-JPMorgan Chase &amp; Co.,
 MSFT-Microsoft Corporation, C-Citigroup Inc. and print them
